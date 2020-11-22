@@ -8,11 +8,17 @@ END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[
-nCounter	:= nCounter + 1;]]></ST>
+nCounter		:= nCounter + 1;
+
+IF nCounter > 1000 THEN
+	nCounter	:= 0;
+END_IF]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="7" Count="0" />
       <LineId Id="2" Count="0" />
+      <LineId Id="11" Count="0" />
+      <LineId Id="8" Count="2" />
     </LineIds>
   </POU>
 </TcPlcObject>
